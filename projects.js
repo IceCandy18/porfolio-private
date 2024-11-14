@@ -63,7 +63,7 @@ function generateHTML(details) {
                 <p>${details.body}</p>
             </div>
             <div class="modal-links">
-                <a href=${details.seeLiveUrl}><button type="button">See Live &nbsp;&nbsp;<i class="fas fa-eye"></i></button></a>
+                
                 <a href=${details.seeSourceUrl}><button style="display:flex; align-items: center; width: auto;" type="button">See Source&nbsp;&nbsp;<i id="github-icon-modal" class="fab fa-github-alt"></i></button></a>
             </div>
         </div>

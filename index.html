@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:regular,italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="https://kit.fontawesome.com/e971436820.js" crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM5DDTY6SN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HM5DDTY6SN');
+    </script>
+
+    <title>Kritin's Portfolio</title>
+</head>
+<body>
+        <header id="nav" class="nav-bar">
+            <h3>Kritin Kusumakar</h3>
+            <img id="close" src="./assets/closing-btn.svg" alt="Close menu" class="closing-btn">
+            <ul class="desktop-only">
+                <li><a class="link" href="#portfolio">Portfolio</a></li>
+                <li><a class="link" href="#about-me">About</a></li>
+                <li><a class="link" href="#contact">Contact</a></li>
+                <li class="hide"><a class="link" href="#contact"><i class="far fa-envelope fa-lg"></i></a></li>
+            </ul>
+            <i id="mobileMenu" class="fas fa-bars fa-lg"></i>
+        </header>
+        <section class="intro">
+            <div class="name">
+                <h1>Hey There.<br>I’m Kritin</h1>
+            </div>
+            <div class="primary-content">
+                <h3>Budding AI Developer</h3>
+                <p>I'm a final year student at VIT who wants to forge a career in the fast moving and dynamic world of Artificial Intelligence by developing secure and trustworkthy systems.</p>
+            </div>
+            <ul class="socials">
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fab fa-angellist"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+        </section>
+        <section id="portfolio" class="recent-works">
+            <div class="section-title">
+                <h3>My Recent Works</h3>
+                <hr>
+            </div>
+            <div class="recent-work">
+                <a href=""><img class="recent-work-img" src="./assets/chatbot.jpg" alt="image of chatbot"></a>
+                <div>
+                    <h4>PDF Query Bot</h4>
+                    <p>Easily upload your own PDF or Text documents and ask questions based on the data presen in it.</p>
+                    <ul class="tech-used">
+                        <li>Python</li>
+                        <li>Ollama</li>
+                        <li>Streamlit</li>
+                    </ul>
+                    <button id="1" class="project-button modal-open" type="button" data-modal="modal-1">See Project</button>
+                </div>
+            </div>
+            <br>
+            <div id="cardsSection" class="cards-section">
+                
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>I am native of Kolkata, having completed my schooling from La Martiniere for Boys and scoring 88% in ICSE and ISC exams. After that I joined
+                        VIT to get a B.Tech degree in CSE. I currently have a 8.30 cgpa and have taken up subjects like Data Structures and Algorithms, 
+                        Computer Networks, Information Security,  Operating System, Computational Statistics, Operations Research, Artificial Intelligence, Data Mining and Analysis.
+                    </p>
+                    <button type="button">Get My Resume</button>
+                    <hr class="hr">
+                </div>
+                <div class="skill-set">
+                    <ul>
+                        <li class="languages"> Languages</li>
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">C++</li>
+                        <li class="skill-item">Html</li>
+                        <li class="skill-item">Css</li>
+                        <li class="skill-item">&nbsp;</li>
+                        <li class="frameworks"> Frameworks</li>
+                        <li class="skill-item">Llamacpp</li>
+                        <li class="skill-item">Ollama</li>
+                        <li class="skill-item">Beautiful Soup</li>
+                        
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <form id="contact" class="form" action="https://formspree.io/f/mqknezdy" method="POST">
+                <h2>I'm always interested in connecting with new people, so if you'd like to chat please get in touch.</h2>
+                <ul class="contact-form">
+                    <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
+                    </li>
+                    <li id="form-control" class="form-control">
+                        <label for="email"></label>
+                        <input class="email-input" id="email" name="user_email" placeholder="Email address">
+                        <small class="small">Can not submit email with uppercase characters</small>
+                    </li>
+                    <li>
+                        <label for="message"></label>
+                        <textarea id="message" name="user_message" placeholder="Enter text here" maxlength="500" required></textarea>
+                    </li>
+                </ul>
+                <button class="form-button" type="submit">Get in touch</button>
+        </form>
+        <hr class="form-hr">
+        <footer>
+            <ul class="footer-socials">
+                <li><a href=""><i class="fab fa-github"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fab fa-angellist"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-medium-m"></i></a></li>
+            </ul>
+        </footer>
+        <script src="navbar.js"></script>
+        <script src="projects.js"></script>
+        <script src="popup.js"></script>
+        <script src="form.js"></script>
+        <script src="storage.js"></script>
+</body>
+</html>
